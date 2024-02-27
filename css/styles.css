@@ -192,7 +192,12 @@ ul {
 
 .traditions-container {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
 }
 
 .traditions-title {
@@ -224,6 +229,22 @@ ul {
 }
 
 /* Formats section */
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.format-item {
+  flex-basis: calc((100%-40px) / 3);
+}
+
+.format-card {
+  border: 1px solid lightgray; /* remove */
+  border-radius: 16px;
+  padding: 20px;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
