@@ -34,8 +34,9 @@
 :root {
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
-  --color-brand-light: #819b57;
+  --color-brand-normal: #819b57;
   --color-brand-dark: #465929;
+  --color-brand-light: #cfcfbc;
 }
 
 /* Base */
@@ -87,8 +88,8 @@ ul {
   padding: 16px 32px;
   color: var(--color-primary-light);
   font-weight: 600;
-  background-color: var(--color-brand-light);
-  border: 2px solid var(--color-brand-light);
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -103,7 +104,7 @@ ul {
   text-decoration: none;
 }
 .link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 /* Header */
@@ -130,9 +131,24 @@ ul {
   justify-content: center;
 }
 
+/* All section */
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
 /* Hero-section */
 .hero-section {
   padding: 272px 0;
+  background-image: url("../images/hero-section-background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 .hero-title {
   color: var(--color-primary-light);
@@ -143,7 +159,7 @@ ul {
 }
 
 .hero-title .accent {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 /* Advantages section */
@@ -158,7 +174,7 @@ ul {
 }
 
 .advantages-section {
-  background-color: var(--color-brand-light);
+  background-color: var(--color-brand-normal);
   padding: 16px 0;
 }
 .advantages-list {
@@ -172,13 +188,6 @@ ul {
   color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
-}
-
-/* All section */
-.section-title {
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1.3;
 }
 
 .section-title .accent {
@@ -205,7 +214,7 @@ ul {
 }
 
 .traditions-text .brand {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
   font-weight: 600;
 }
 
@@ -219,7 +228,21 @@ ul {
 
 /* Cookers section */
 .cookers-title {
-  margin-bottom: 80px;
+  max-width: 538px;
+  margin: 0 auto 80px;
+}
+
+.cookers-photo {
+  border-radius: 4px 4px 4px 200px;
+}
+
+.cookers-title::before,
+.cookers-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand-light);
+  content: ""; /* Задається обов'язково для псевдоелементів, 
+  щоб їх було видно. Ніколи не можна писати в лапках текст */
 }
 
 .cooker-title {
@@ -231,18 +254,25 @@ ul {
 /* Formats section */
 .formats-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
 }
 
 .format-item {
-  flex-basis: calc((100%-40px) / 3);
+  flex-basis: calc((100%-48px) / 3);
 }
 
 .format-card {
+  height: 444px;
   border: 1px solid lightgray; /* remove */
   border-radius: 16px;
-  padding: 20px;
+  padding: 24px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.208%,
+    rgba(49, 38, 26, 0.71) 72.917%,
+    var(--color-primary-dark) 100%
+  );
 }
 
 .formats-title {
@@ -278,9 +308,17 @@ ul {
 }
 
 .address-link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 .address-copyright {
   font-size: 14px;
+}
+
+.footer {
+  background-image: url(/images/footer-background.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
