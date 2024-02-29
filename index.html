@@ -58,8 +58,8 @@
               </h2>
               <p class="traditions-text">
                 <span class="brand uppercase">shop bakery</span> — це пекарня,
-                яка взяла все найкраще, і зберегла смак традиційної випічки та
-                натуральність інгредієнтів.
+                яка взяла все найкраще, і зберегла смак <br />
+                традиційної випічки та натуральність інгредієнтів.
               </p>
               <p class="traditions-text limited">
                 Ми працюємо як найвідоміші мережі —
@@ -80,34 +80,47 @@
           <h2 class="cookers-title section-title centered">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="cooker-list">
+            <li class="cooker-item">
+              <article class="cooker-card">
                 <img
                   class="cookers-photo"
-                  src="./images/cooker-girl.jpeg"
+                  src="./images/cooker-girl.jpg"
                   alt="Кухар дівчинка"
                 />
-                <h3 class="cooker-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
+                <div>
+                  <h3 class="cooker-title">Настя</h3>
+                  <p class="cooker-text">Привіт, я Настя!</p>
+                  <p class="cooker-text">
+                    Вже 10 років, я втілюю <br />
+                    у життя цікаві та смачні ідеї.
+                  </p>
+                  <p class="cooker-text">
+                    Я випічу для вас <br />
+                    найсмачніщі вироби!
+                  </p>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="cooker-item">
+              <article class="cooker-card">
                 <img
                   class="cookers-photo"
                   src="./images/cooker-man.jpeg"
                   alt="Кухар чоловік"
                 />
-                <h3 class="cooker-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
-                  Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
-                  любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
-                </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <div>
+                  <h3 class="cooker-title">Влад</h3>
+                  <p class="cooker-text">Привіт, я Влад!</p>
+                  <p class="cooker-text">
+                    Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                    любов, з якою ми ділимось кожен раз з Вами через нашу
+                    випічку!
+                  </p>
+                  <p class="cooker-text">
+                    Я зроблю для вас унікальну начинку на будь який смак!
+                  </p>
+                </div>
               </article>
             </li>
           </ul>
@@ -116,66 +129,84 @@
       <section class="section" id="formats-section">
         <div class="container">
           <h2 class="formats-title section-title centered">Формати</h2>
-          <ul class="formats-list">
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title" lang="en">Walrus</h3>
-                <div class="format-text">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title" lang="en">Horseshoe</h3>
-                <div class="format-text">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title" lang="en">Handlebar</h3>
-                <div class="format-text">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <div class="formats-container">
+            <button class="carousel-button" type="button">
+              <svg width="16px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats-list">
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title" lang="en">Walrus</h3>
+                  <div class="format-text">
+                    <p>Площа: до 120 м2</p>
+                    <p>Меню: розширене меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: є</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title" lang="en">Horseshoe</h3>
+                  <div class="format-text">
+                    <p>Площа: до 120 м2</p>
+                    <p>Меню: розширене меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: є</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title" lang="en">Handlebar</h3>
+                  <div class="format-text">
+                    <p>Площа: до 120 м2</p>
+                    <p>Меню: розширене меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: є</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg width="16px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title section-title">
-            Приєднуйся до мережі пекарень
-          </h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-          <iframe
-            class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1700647045896!5m2!1suk!2sua"
-            height="595"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">
+                Приєднуйся до мережі пекарень
+              </h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <!-- Form -->
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1700647045896!5m2!1suk!2sua"
+              width="603"
+              height="595"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -216,12 +247,16 @@
             </li>
             <li>
               <a href="#">
-                <!-- facebook icon -->
+                <svg class="address-icon" width="32px" height="32px">
+                  <use href="./images/icons.svg#icon-logo-facebook"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <!-- instgram icon -->
+                <svg class="address-icon" width="32px" height="32px">
+                  <use href="./images/icons.svg#icon-logo-instagram"></use>
+                </svg>
               </a>
             </li>
           </ul>

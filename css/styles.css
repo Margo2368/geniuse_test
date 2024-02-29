@@ -37,6 +37,7 @@
   --color-brand-normal: #819b57;
   --color-brand-dark: #465929;
   --color-brand-light: #cfcfbc;
+  --color-secondary-dark: #a28268;
 }
 
 /* Base */
@@ -46,6 +47,7 @@
 
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -232,10 +234,6 @@ ul {
   margin: 0 auto 80px;
 }
 
-.cookers-photo {
-  border-radius: 4px 4px 4px 200px;
-}
-
 .cookers-title::before,
 .cookers-title::after {
   display: block;
@@ -245,6 +243,26 @@ ul {
   щоб їх було видно. Ніколи не можна писати в лапках текст */
 }
 
+.cooker-list {
+  display: flex;
+  gap: 30px;
+}
+
+.cooker-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.cooker-card {
+  display: flex;
+  gap: 30px;
+}
+
+.cookers-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
+}
+
 .cooker-title {
   margin-bottom: 16px;
   font-size: 40px;
@@ -252,6 +270,12 @@ ul {
 }
 
 /* Formats section */
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
 .formats-list {
   display: flex;
   flex-wrap: nowrap;
@@ -289,14 +313,46 @@ ul {
   font-weight: 300;
 }
 
-/* Contact section */
-.contact-title {
-  margin-bottom: 16px;
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-primary-dark);
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-.map {
-  width: 100%;
-  max-width: 651px;
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
+/* Contact section */
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+}
+
+.contact-title {
+  margin-bottom: 16px;
+  font-size: 63px;
 }
 
 /* footer */
@@ -309,6 +365,14 @@ ul {
 
 .address-link:hover {
   color: var(--color-brand-normal);
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-normal);
 }
 
 .address-copyright {
