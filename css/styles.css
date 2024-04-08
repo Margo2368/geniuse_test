@@ -236,17 +236,26 @@ a {
 
 /* Cookers section */
 .cookers-title {
-  max-width: 538px;
+  position: relative;
   margin: 0 auto 80px;
 }
 
 .cookers-title::before,
 .cookers-title::after {
-  display: block;
-  width: 352px;
+  position: absolute;
+  bottom: 24px;
+  width: 344px;
   border: 2px solid var(--color-brand-light);
   content: ""; /* Задається обов'язково для псевдоелементів, 
   щоб їх було видно. Ніколи не можна писати в лапках текст */
+}
+
+.cookers-title::before {
+  left: 0;
+}
+
+.cookers-title::after {
+  right: 0;
 }
 
 .cooker-list {
